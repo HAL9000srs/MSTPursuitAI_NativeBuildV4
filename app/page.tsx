@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       {/* Hero Section - Main introduction */}
-      <section className="grid lg:grid-cols-2 grid-cols-1 items-center gap-12 lg:text-left text-center min-h-[85vh] py-12" id="home" aria-label="Hero section - Wilson Kinyua Introduction">
+      <section className="grid lg:grid-cols-2 grid-cols-1 items-center gap-12 lg:text-left text-center min-h-[85vh] py-12 pt-24" id="home" aria-label="Hero section - Wilson Kinyua Introduction">
         <header className="lg:order-1 order-2">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm mb-4">
             <span className="relative flex h-2 w-2">
@@ -103,13 +103,13 @@ export default function Home() {
 
           <SocialLinks />
         </header>
-        <div className="lg:order-2 order-1 flex items-end justify-center">
+        <div className="lg:order-2 order-1 flex items-end justify-center pb-0 pt-16">
           <Image
             src="/img/ai-hero.png"
             alt="AI Network - Artificial Intelligence Technology Visualization"
             width={600}
             height={400}
-            className="w-full max-w-2xl h-auto object-contain opacity-90 mix-blend-screen glow-element"
+            className="w-full max-w-2xl h-auto object-contain opacity-90 mix-blend-screen rounded-2xl"
             priority
           />
         </div>

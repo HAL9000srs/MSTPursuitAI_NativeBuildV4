@@ -18,8 +18,8 @@ import HolographicBackground from "@/components/holographic-background";
 
 export const metadata: Metadata = {
   title: {
-    default: "Wilson Kinyua | Senior Software Engineer in Nairobi",
-    template: "%s | Wilson Kinyua"
+    default: "Malcolm S. Turnquest | AI Developer",
+    template: "%s | Malcolm S. Turnquest"
   },
   description: "Wilson Kinyua - Senior Software Engineer in Nairobi with 7+ years experience in React, Next.js, TypeScript & Python. Available for projects. View portfolio.",
   metadataBase: new URL("https://www.wilsonkinyua.com"),
