@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.wilsonkinyua.com'
+  const baseUrl = 'https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4'
   const currentDate = new Date()
 
   return [

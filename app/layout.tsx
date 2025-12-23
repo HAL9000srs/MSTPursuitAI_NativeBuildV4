@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     template: "%s | Malcolm S. Turnquest"
   },
   description: "Wilson Kinyua - Senior Software Engineer in Nairobi with 7+ years experience in React, Next.js, TypeScript & Python. Available for projects. View portfolio.",
-  metadataBase: new URL("https://www.wilsonkinyua.com"),
+  metadataBase: new URL("https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4"),
   alternates: {
     canonical: "/",
   },
@@ -52,9 +52,9 @@ export const metadata: Metadata = {
     "Developer Portfolio Kenya",
     "Tech Portfolio Nairobi"
   ].join(", "),
-  authors: [{ name: "Wilson Kinyua", url: "https://www.wilsonkinyua.com" }],
-  creator: "Wilson Kinyua",
-  publisher: "Wilson Kinyua",
+  authors: [{ name: "Malcolm S. Turnquest", url: "https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4" }],
+  creator: "Malcolm S. Turnquest",
+  publisher: "Malcolm S. Turnquest",
   category: "Technology",
   robots: {
     index: true,

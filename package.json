@@ -10,7 +10,7 @@
     "analyze": "ANALYZE=true next build",
     "build:analyze": "yarn build && yarn analyze",
     "export": "next export",
-    "lighthouse": "npx lighthouse https://www.wilsonkinyua.com --output-path=./lighthouse-report.html --view",
+    "lighthouse": "npx lighthouse https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4 --output-path=./lighthouse-report.html --view",
     "type-check": "tsc --noEmit"
   },
   "dependencies": {

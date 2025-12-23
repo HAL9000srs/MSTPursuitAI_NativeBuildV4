@@ -1,5 +1,6 @@
 import React from 'react';
 import Script from 'next/script';
+import { tron } from '@/lib/fonts';
 
 interface BreadcrumbItem {
   name: string;
@@ -40,7 +41,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
               )}
               <a
                 href={item.url}
-                className={`inline-flex items-center text-sm font-medium ${index === items.length - 1
+                className={`${tron.className} inline-flex items-center text-sm font-medium ${index === items.length - 1
                     ? 'text-primary cursor-default'
                     : 'text-gray-300 hover:text-primary'
                   }`}

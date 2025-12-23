@@ -30,12 +30,12 @@ export default function Home() {
   }, []);
 
   const breadcrumbItems = [
-    { name: "Home", url: "https://www.wilsonkinyua.com" },
-    { name: "About", url: "https://www.wilsonkinyua.com#about" },
-    { name: "Services", url: "https://www.wilsonkinyua.com#services" },
-    { name: "Case Studies", url: "https://www.wilsonkinyua.com#case-studies" },
-    { name: "Resume", url: "https://www.wilsonkinyua.com#resume" },
-    { name: "Contact", url: "https://www.wilsonkinyua.com#contact" }
+    { name: "Home", url: "https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4" },
+    { name: "About", url: "https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4#about" },
+    { name: "Services", url: "https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4#services" },
+    { name: "Case Studies", url: "https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4#case-studies" },
+    { name: "Resume", url: "https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4#resume" },
+    { name: "Contact", url: "https://github.com/HAL9000srs/MSTPursuitAI_NativeBuildV4#contact" }
   ];
 
   return (

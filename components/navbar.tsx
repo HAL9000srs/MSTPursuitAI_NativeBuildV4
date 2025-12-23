@@ -19,7 +19,7 @@ import { usePathname } from "next/navigation"
 import { Menu } from "lucide-react"
 import { Separator } from "./ui/separator"
 import SocialLinks from "./social-links"
-import { pacifico } from "@/lib/fonts"
+import { tron } from "@/lib/fonts"
 import { useEffect } from "react"
 import Hire from "./forms/hire"
 export default function Navbar() {
@@ -48,42 +48,42 @@ export default function Navbar() {
     return (
         <div className="sticky top-0 z-10 navbar">
             <div className="flex justify-between items-center py-5 container mx-auto">
-                <Link href={"/"} className={`${pacifico.className} text-2xl`}>
-                    <span className="text-primary">W</span>ilson <span className="text-primary">K</span>inyua
+                <Link href={"/"} className={`${tron.className} navbar-glow text-2xl uppercase tracking-wider`}>
+                    PURSUIT AI NATIVE 2026
                 </Link>
                 <NavigationMenu>
                     <NavigationMenuList className="hidden lg:flex">
                         <NavigationMenuItem>
                             <Link href="#about" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
                                     About
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="#case-studies" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
                                     Case Studies
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="#offers" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
                                     Services
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="#resume" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
                                     Resume
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="#contact" legacyBehavior passHref>
-                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
                                     Contact
                                 </NavigationMenuLink>
                             </Link>
@@ -92,7 +92,7 @@ export default function Navbar() {
                             <Sheet>
                                 <SheetTrigger>
                                     <Button
-                                        className="font-semibold"
+                                        className={`${tron.className} font-semibold`}
                                     >
                                         Hire Me
                                     </Button>

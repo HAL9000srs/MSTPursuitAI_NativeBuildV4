@@ -190,6 +190,20 @@ html {
   animation: scanLine 2s linear infinite;
 }
 
+@keyframes navbarGlow {
+  0%, 100% {
+    text-shadow: 0 0 5px rgba(0, 242, 255, 0.5), 0 0 10px rgba(0, 242, 255, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 10px rgba(0, 242, 255, 0.8), 0 0 20px rgba(0, 242, 255, 0.5), 0 0 30px rgba(0, 242, 255, 0.3);
+  }
+}
+
+.navbar-glow {
+  animation: navbarGlow 3s ease-in-out infinite;
+  color: #0a7a8a;
+}
+
 .background-image {
   position: fixed;
   inset: 0;

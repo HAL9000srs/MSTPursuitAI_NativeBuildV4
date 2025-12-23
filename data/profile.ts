@@ -1,5 +1,5 @@
 export const profile = {
-  name: "Wilson Kinyua",
+  name: "Malcolm S. Turnquest",
   title: "I fix slow, buggy frontends so your users stay.",
   tagline: "Senior Frontend Engineer for SaaS and fintech teams. 35% faster load times. 30% higher engagement. Ship with confidence.",
   aiStatement: "I leverage AI to ship 2-3x faster without sacrificing code quality.",
