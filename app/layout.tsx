@@ -6,7 +6,6 @@ import 'aos/dist/aos.css';
 import "../styles/globals.scss";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/navbar";
-import MouseCustomCursor from "@/components/mouse-custom-cursor";
 import { Toaster } from "@/components/ui/toaster"
 import Footer from "@/components/footer";
 import { montserrat } from "@/lib/fonts";
@@ -14,6 +13,7 @@ import Script from "next/script";
 import SkipToContent from "@/components/skip-to-content";
 import SplashScreen from "@/components/splash-screen";
 import HolographicBackground from "@/components/holographic-background";
+import GlassOverlay from "@/components/glass-overlay";
 
 
 export const metadata: Metadata = {
@@ -126,6 +126,7 @@ export default function RootLayout({
       >
         <SplashScreen />
         <HolographicBackground />
+        <GlassOverlay />
         <SkipToContent />
 
 
@@ -134,7 +135,6 @@ export default function RootLayout({
           defaultTheme="dark"
           disableTransitionOnChange
         >
-          <MouseCustomCursor />
           <Navbar />
           <main id="main-content" className="container mx-auto" role="main" tabIndex={-1}>
             {children}

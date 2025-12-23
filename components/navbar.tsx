@@ -48,43 +48,43 @@ export default function Navbar() {
     return (
         <div className="sticky top-0 z-10 navbar">
             <div className="flex justify-between items-center py-5 container mx-auto">
-                <Link href={"/"} className={`${tron.className} navbar-glow text-2xl uppercase tracking-wider`}>
+                <Link href={"/"} className={`${tron.className} text-2xl uppercase tracking-wider`}>
                     PURSUIT AI NATIVE 2026
                 </Link>
                 <NavigationMenu>
                     <NavigationMenuList className="hidden lg:flex">
                         <NavigationMenuItem>
                             <Link href="#about" legacyBehavior passHref>
-                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
-                                    About
+                                <NavigationMenuLink className={`${tron.className} uppercase tracking-wider opacity-70 ${navigationMenuTriggerStyle()}`}>
+                                    ABOUT
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="#case-studies" legacyBehavior passHref>
-                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
-                                    Case Studies
+                                <NavigationMenuLink className={`${tron.className} uppercase tracking-wider opacity-70 ${navigationMenuTriggerStyle()}`}>
+                                    CASE STUDIES
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="#offers" legacyBehavior passHref>
-                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
-                                    Services
+                                <NavigationMenuLink className={`${tron.className} uppercase tracking-wider opacity-70 ${navigationMenuTriggerStyle()}`}>
+                                    SERVICES
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="#resume" legacyBehavior passHref>
-                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
-                                    Resume
+                                <NavigationMenuLink className={`${tron.className} uppercase tracking-wider opacity-70 ${navigationMenuTriggerStyle()}`}>
+                                    RESUME
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <Link href="#contact" legacyBehavior passHref>
-                                <NavigationMenuLink className={`${tron.className} navbar-glow ${navigationMenuTriggerStyle()}`}>
-                                    Contact
+                                <NavigationMenuLink className={`${tron.className} uppercase tracking-wider opacity-70 ${navigationMenuTriggerStyle()}`}>
+                                    CONTACT
                                 </NavigationMenuLink>
                             </Link>
                         </NavigationMenuItem>
@@ -92,7 +92,7 @@ export default function Navbar() {
                             <Sheet>
                                 <SheetTrigger>
                                     <Button
-                                        className={`${tron.className} font-semibold`}
+                                        className="font-semibold"
                                     >
                                         Hire Me
                                     </Button>

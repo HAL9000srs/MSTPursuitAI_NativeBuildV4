@@ -214,3 +214,9 @@ html {
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.navbar-glassmorphism {
+  background: rgba(10, 15, 30, 0.3);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
