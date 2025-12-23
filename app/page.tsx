@@ -45,8 +45,8 @@ export default function Home() {
       </div>
 
       {/* Hero Section - Main introduction */}
-      <section className="grid lg:grid-cols-2 grid-cols-1 items-center lg:text-left text-center min-h-screen" id="home" aria-label="Hero section - Wilson Kinyua Introduction">
-        <header className="lg:order-1 order-2 lg:my-0 my-10">
+      <section className="grid lg:grid-cols-2 grid-cols-1 items-center gap-12 lg:text-left text-center min-h-[85vh] py-12" id="home" aria-label="Hero section - Wilson Kinyua Introduction">
+        <header className="lg:order-1 order-2">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-sm mb-4">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -55,7 +55,7 @@ export default function Home() {
             <span className="text-muted-foreground">Available for projects & opportunities</span>
           </div>
 
-          <h1 className="lg:text-5xl text-3xl font-black tracking-tight lg:my-5 my-2">
+          <h1 className="lg:text-5xl text-4xl font-black tracking-tight lg:my-5 my-2">
             {profile.title}
           </h1>
           <p className="text-lg font-medium text-foreground/80 mb-2">
@@ -91,9 +91,9 @@ export default function Home() {
           </div>
 
           {/* Dual CTAs */}
-          <div className="lg:flex lg:gap-4 my-8 lg:space-y-0 space-y-3">
-            <BookCallButton className="lg:w-auto w-full" />
-            <ViewResumeButton className="lg:w-auto w-full" />
+          <div className="flex flex-col sm:flex-row lg:justify-start justify-center gap-4 my-8">
+            <BookCallButton className="sm:w-auto w-full" />
+            <ViewResumeButton className="sm:w-auto w-full" />
           </div>
 
           {/* Availability Statement */}
@@ -103,14 +103,16 @@ export default function Home() {
 
           <SocialLinks />
         </header>
-        <Image
-          src="/img/me.png"
-          alt="Wilson Kinyua - Professional Software Engineer portrait"
-          width={500}
-          height={500}
-          className="w-full lg:h-[45rem] h-96 object-contain lg:order-2 order-1"
-          priority
-        />
+        <div className="lg:order-2 order-1 flex items-end justify-center">
+          <Image
+            src="/img/ai-hero.png"
+            alt="AI Network - Artificial Intelligence Technology Visualization"
+            width={600}
+            height={400}
+            className="w-full max-w-2xl h-auto object-contain opacity-90 mix-blend-screen glow-element"
+            priority
+          />
+        </div>
       </section>
 
       {/* Trusted By - Logo Bar */}
@@ -173,21 +175,10 @@ export default function Home() {
 
       {/* About Section */}
       <section
-        className="grid lg:grid-cols-2 grid-cols-1 items-center gap-20 lg:my-20 my-5"
+        className="max-w-4xl mx-auto lg:my-20 my-5 text-center"
         id='about'
         aria-labelledby="about-heading"
       >
-        <div className="rounded-lg h-full border-t-4 border-b-4 border-primary-foreground transition duration-500 hover:border-primary">
-          <Image
-            src="/img/hold.png"
-            alt="Wilson Kinyua - Professional software engineer working"
-            width={500}
-            height={500}
-            className="w-full h-full object-cover grayscale"
-            data-aos="fade-up"
-            loading="lazy"
-          />
-        </div>
         <article data-aos="fade-up">
           <p className="text-sm uppercase font-semibold tracking-wide">
             About Me
@@ -207,15 +198,17 @@ export default function Home() {
           <p className="text-sm uppercase font-semibold tracking-wide mt-8 mb-4">
             I specialize in:
           </p>
-          <ul className="space-y-4 mb-8">
-            {profile.about.specializations.map((item, index) => (
-              <li key={index} className="flex items-start">
-                <CircleCheck className="text-primary mr-3 mt-1 flex-shrink-0" aria-hidden="true" />
-                <span>{item}</span>
-              </li>
-            ))}
-          </ul>
-          <div className="flex items-start gap-2 p-4 rounded-lg bg-primary/5 border border-primary/20 mb-8">
+          <div className="max-w-2xl mx-auto">
+            <ul className="grid md:grid-cols-2 gap-4 mb-8 text-left">
+              {profile.about.specializations.map((item, index) => (
+                <li key={index} className="flex items-start">
+                  <CircleCheck className="text-primary mr-3 mt-1 flex-shrink-0" aria-hidden="true" />
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="flex items-start gap-2 p-4 rounded-lg bg-primary/5 border border-primary/20 mb-8 max-w-2xl mx-auto">
             <Sparkles className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
             <p className="text-sm">
               {profile.about.aiApproach}

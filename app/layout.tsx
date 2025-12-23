@@ -12,6 +12,9 @@ import Footer from "@/components/footer";
 import { montserrat } from "@/lib/fonts";
 import Script from "next/script";
 import SkipToContent from "@/components/skip-to-content";
+import SplashScreen from "@/components/splash-screen";
+import HolographicBackground from "@/components/holographic-background";
+
 
 export const metadata: Metadata = {
   title: {
@@ -108,7 +111,7 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
 
         {/* Preload critical assets */}
-        <link rel="preload" href="/img/me.png" as="image" />
+        <link rel="preload" href="/img/ai-hero.png" as="image" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
 
@@ -121,7 +124,11 @@ export default function RootLayout({
       <body
         className={cn(montserrat.className)}
       >
+        <SplashScreen />
+        <HolographicBackground />
         <SkipToContent />
+
+
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
